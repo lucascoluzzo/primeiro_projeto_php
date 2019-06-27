@@ -1,0 +1,81 @@
+html, body {
+	margin: 0 auto;
+	padding: 0;
+	outline: none;
+	}
+
+#navgationbar {
+	background: linear-gradient(to right, #DC2A04, #FD6B0E);
+	height: 35px;
+	width: auto;
+}
+	
+.imagem-capa {
+	width: 1200px;
+	height: 450px;
+}
+
+.box-perfil {
+	position: absolute;
+	top: -180px;
+	width: 160px;
+	height: auto;
+	background-color: #FFF;
+	box-shadow: 1px 1px 2px 1px gray;
+	padding: 5px;
+}
+
+.imgresize {
+	width: 150px;
+	height: auto;
+}
+
+/* inicio Menu dinamico */ 
+#menu {
+
+}
+#menuPagina ul {
+	position: relative;
+	right: -25%;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+#menuPagina li {
+	display: inline-block;
+}
+#menuPagina li a {
+	padding:  10px 25px;
+	color: #555;
+	font-size: 18px;
+}
+
+/* Fim Menu dinamico */
+
+.logo-nav{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 100px;
+	top: 2px;
+}
+.title-nav {
+	position: absolute;
+	left: 135px;
+	top: 10px;
+	color: #fff;
+	font-size: 11px;
+}
+
+.textName {
+	font-weight: bold;
+	color: #555;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+.textSname {
+	color: #555;
+	letter-spacing: -1px;
+	font-size: 20px;
+	font-style: italic;
+}

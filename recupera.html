@@ -1,0 +1,120 @@
+<!-- <?php
+session_start();
+require_once "config.php";
+if(!isset($_SESSION['user_session']) && !isset($_SESSION['pwd_session'])) {
+?> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet"  href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet"  href="loginstyle.css">
+	<title>Entrar</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<form method="post" action="?go=logar">
+			<div class="alinha">
+				<div class="caixaLogin">
+				<div>
+					<img  id="logoGS" title="Logo" alt="Logo" src="images/gsfcadastro.png"> 
+				</div>
+				<!-- <label>E-mail:</label> -->
+					<div class="">
+						<td><input type="email" name="email_usuario" id="usuario" class="txt" placeholder="Login/E-mail" required></td>
+					</div>
+					<hr>
+					<!-- <label>Senha:</label> -->
+					<div class="">
+						<td><input type="password" name="senha_usuario" id="senha" class="txt" placeholder="Senha" required></td>
+					</div>
+					<hr>
+					<div class="teste">
+						<span><a href="">Esqueceu sua senha?</a></span>
+					</div>
+					<div class="teste">
+						<span>Ainda não tem uma conta? <a href="cadastro.php">Clique aqui e cadastre-se</a></span>
+					</div>
+					<br>
+					<div>
+						<td colspan="2"><input type="submit" value="Entrar" class="btn" id="btnEntrar"></td>
+					</div>
+
+				<!--	<a href="cadastro.php"><input type="button" value="Cadastre-se" class="btn" id="btnCad"></a> -->
+
+				</div>
+			</div>			
+		</form>
+	</div>
+						
+
+<!-- <footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				
+			</div>
+			<div class="col-md-7">
+				<h4>Copyright 2018 | Powered by House Dev's</h4>
+			</div>
+		</div>
+	</div>
+</footer> -->	
+
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!-- <?php
+} 
+	
+	else { header("location: area_jogador.php");
+	}
+if(isset($_GET['go'])) 
+{
+if($_GET['go'] == 'logar')
+{
+	$email = $_POST['email_usuario'];
+	$pwd = $_POST['senha_usuario'];
+
+	if(empty($email)){
+		echo "<script>alert('Preencha todos os campos para logar-se.'); history.back();</script>";
+	}
+	elseif(empty($pwd)){
+		echo "<script>alert('Preencha todos os campos para logar-se.'); history.back();</script>";
+	}
+	else
+	{
+
+		$sql = ("SELECT id_usuario, email_usuario, senha_usuario FROM usuarios WHERE email_usuario = '$email' AND senha_usuario = '$pwd'");
+		$query1 = mysqli_query($con, $sql);
+	if ($query1){
+			$dados_usuario = mysqli_fetch_array($query1);
+
+			if(isset($dados_usuario['email_usuario']))
+		{
+			$_SESSION['id'] = $dados_usuario['id_usuario'];
+			$_SESSION['user_session'] = $email;
+			$_SESSION['pwd_session'] = $pwd;
+			echo "<script>alert('Usuário logado com sucesso.');</script>";
+			header("Location: area_jogador.php");
+		}
+
+		else{
+
+		echo "<script>alert('Usuário e senha não correspondem.'); history.back();</script>";
+		}
+	}	
+		
+		else
+		{
+		header("Location: login.php");
+			}
+
+		}
+	}	
+
+}
+?> -->

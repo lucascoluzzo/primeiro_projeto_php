@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0 auto;
+	padding: 0;
+	outline: none;
+	height: 100%;
+	}
+
+.imgsite {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.imglogin {
+	max-width: 150px;
+	max-height: 120px;
+	margin-top: 28%;
+	margin-left: 37%;
+	margin-bottom: 35px;
+
+}
+.pass {
+	color: #000;
+	font-weight: bold;
+	text-decoration: underline;
+		font-size: 11px;
+	color: #000;
+}
+
+.caixasali {
+	margin-left: 32%;
+	margin-top: 15px;
+
+}
+.caixaslog {
+	text-align: center;
+	height: 25px;
+	width: 250px;
+	border: 1px;
+	border-style: solid;
+	border-color: #aaa;
+	border-radius: 12px;
+	background-color: #fff;	
+	color: #000;
+	font-size: 12px;
+	outline: none;
+}
+
+.caixaentrar {
+	text-align: center;
+	height: 25px;
+	width: 250px;
+	font-size: 14px;
+	border-radius: 12px;
+	border-style: none;
+	background: linear-gradient(to right, #DC2A04, #FD6B0E);
+	color: #fff;
+	outline: none;
+}
+
+.caixacad {
+	text-align: center;
+	height: 25px;
+	width: 250px;
+	font-size: 14px;
+	color: #000;
+	margin-left: 10%;
+}
+
+.ladoE {
+	/* background-image: url(images/FundoSite.jpg); */
+	float: left;
+	width: 50%;
+	height: 50%;
+
+}
+
+.ladoD {
+	width: 100%;
+	height: 100%;
+
+}
+
+
+.modalTitle{
+	text-align: center;
+	color: #555;
+	font-weight: bold;
+}
+
+.modalspan {
+	font-weight: bold;
+}
+.btn-primary {
+	background: linear-gradient(to right, #DC2A04, #FD6B0E);
+	border-color: #fff;
+}
+
+.form-control {
+	border-radius: 20px;
+	height: 30px;
+}

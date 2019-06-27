@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet"  href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet"  href="lib/css/edit-style.css">
+</head>
+<body>
+		Entre com os dados: <input type="text" id="campo" name="campo" disabled/>
+		<br/><br/>
+		Entre com os dados: <input type="text" id="campo" name="campo1" disabled/> 
+		<br/><br/>
+		<img src="images/bg-icons.png" href="#" id="enable">
+
+
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#enable").click(function (){
+		                // habilita o campo
+				$("input").prop("disabled", false);
+			
+			});
+		    
+		    $("#disable").click(function (){
+		                // desabilita o campo 
+				$("input").prop("disabled", true);
+				
+			});
+		});
+	</script>
+</body>
+</html>
